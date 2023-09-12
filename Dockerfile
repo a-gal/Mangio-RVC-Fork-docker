@@ -4,7 +4,7 @@ EXPOSE 7865
 
 WORKDIR /app
 
-RUN apt install ffmpeg
+RUN apt update && apt install ffmpeg -y
 
 RUN git clone https://github.com/Mangio621/Mangio-RVC-Fork.git .
 
